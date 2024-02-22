@@ -14,4 +14,7 @@ const publicPath = path.join(__dirname, 'public');
 // create a middleware
 app.use(express.static(publicPath));
 
-// create
+// create a js function that filters and returns even numbers from a given array
+function evenNumbers(arr) {
+  return arr.filter(num => num % 2 === 0);
+}
